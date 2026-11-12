@@ -9,6 +9,7 @@ coverage/
 .pnpm-store/
 
 # Local/private files
+*.tgz
 .env
 .env.*
 !.env.example
@@ -18,3 +19,4 @@ coverage/
 # Editors
 .idea/
 .vscode/
+

@@ -15,8 +15,9 @@ npm test            # offline unit tests (node:test)
 npm run test:live   # optional: real network smoke test, needs a share link
 ```
 
-`npm test` must stay fully offline. Node 24 changed `--test` positional
-arguments to globs, which is why the script uses `"test/*.test.mjs"`.
+`npm test` must stay fully offline. Node 22+ accepts glob patterns as `--test`
+positional arguments; the script quotes `"test/*.test.mjs"` so the shell does
+not expand it.
 
 ## Project layout
 
@@ -46,3 +47,4 @@ profile, the browser tab state (open/closed), and any console error text. The
 plugin records lightweight mount diagnostics that can be read at
 `GET /dsh-deepseek-chat-mode/client-events` on the local DSH origin; feel free
 to include that output (it contains no conversation content).
+

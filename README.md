@@ -153,7 +153,7 @@ npm test            # 34 个离线单测（node:test，无依赖）
 npm run test:live   # 可选：真实联网冒烟，需传入分享链接
 ```
 
-- Node 22+；Node 24 起 `--test` 的位置参数是 glob（`"test/*.test.mjs"`）。
+- Node 22+；`--test` 的位置参数支持 glob（脚本用引号防止 shell 展开），因此测试命令写作 `node --test "test/*.test.mjs"`。
 - 目录说明与贡献流程见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 - 验证清单见 [docs/verification.md](docs/verification.md)。
 
@@ -179,3 +179,4 @@ endpoint + rendered page) and on the DSH Desktop profile for the embedded browse
 
 The embedded DeepSeek brand artwork is MIT-licensed by DeepSeek; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
