@@ -1,0 +1,3 @@
+- insert:
+    - id: deepseek-chat-mode
+      name: '@xumi0920/dsh-deepseek-chat-mode'

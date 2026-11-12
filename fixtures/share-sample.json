@@ -1,0 +1,117 @@
+{
+  "__fixture_note": "Synthetic sample data for parser tests. It contains no real conversation.",
+  "code": 0,
+  "msg": "",
+  "data": {
+    "biz_code": 0,
+    "biz_msg": "",
+    "biz_data": {
+      "title": "Shared Conversation",
+      "model_type": "default",
+      "messages": [
+        {
+          "message_id": "1",
+          "role": "USER",
+          "status": "FINISHED",
+          "fragments": [
+            {
+              "id": "f1",
+              "type": "REQUEST",
+              "content": "我想规划一次城市周末短途旅行（两天一夜），预算 1500 元以内，喜欢自然风景和当地小吃。帮我对比“近郊徒步 + 民宿”和“高铁去邻市 + 老城区”两种方案，给出建议和三天内的准备清单。"
+            }
+          ]
+        },
+        {
+          "message_id": "2",
+          "role": "ASSISTANT",
+          "status": "FINISHED",
+          "fragments": [
+            {
+              "id": "f2",
+              "type": "THINK",
+              "content": "（内部推理，不应出现在导出文本中）先比较两种方案的交通成本、体力消耗和体验密度。"
+            },
+            {
+              "id": "f3",
+              "type": "TOOL_SEARCH",
+              "status": "FINISHED",
+              "content": "Found 12 web pages",
+              "queries": [
+                "周末短途旅行 预算 1500"
+              ],
+              "results": [
+                {
+                  "title": "示例搜索结果"
+                }
+              ]
+            },
+            {
+              "id": "f4",
+              "type": "THINK",
+              "content": "（内部推理第二段，不应导出）再按预算和同行人偏好收束建议。"
+            },
+            {
+              "id": "f5",
+              "type": "TOOL_OPEN",
+              "status": "FINISHED",
+              "result": "（工具打开结果，不应导出）",
+              "reference": {
+                "title": "示例参考"
+              }
+            },
+            {
+              "id": "f6",
+              "type": "RESPONSE",
+              "content": "先给结论：如果预算 1500 元、两天一夜、以自然风景和当地小吃为主，我更推荐「近郊徒步 + 民宿」方案；「高铁去邻市 + 老城区」更适合喜欢城市漫步和博物馆的人。\n\n## 两种方案对比\n\n### 方案 A：近郊徒步 + 民宿\n- 交通：市区出发约 1.5 小时，往返交通约 120 元；\n- 住宿：山脚民宿一晚约 350 元，含早餐；\n- 餐饮：当地农家菜和小吃约 200 元；\n- 门票与杂项：约 80 元；\n- 合计约 750 元，剩余预算可以留作机动或升级住宿。\n\n### 方案 B：高铁去邻市 + 老城区\n- 交通：高铁往返约 320 元，市内地铁与打车约 80 元；\n- 住宿：老城区快捷酒店一晚约 300 元；\n- 餐饮：当地小吃与正餐约 300 元；\n- 门票：博物馆与景点约 120 元；\n- 合计约 1120 元，预算更紧但体验偏城市文化。\n\n## 建议\n优先 A：体力要求适中、花费低、自然风景密度高；如果同行者不喜欢走路，再选 B。\n\n## 三天内的准备清单\n1. 第一天：确定目的地与民宿，查看天气和徒步路线难度；\n2. 第二天：购买车票/预约门票，准备轻便雨具和徒步鞋；\n3. 第三天：列一份轻量零食与饮水清单，把证件与充电宝放进随身包。\n\n注意：以上价格为示例估算，出发前请以实际查询为准。"
+            },
+            {
+              "id": "f7",
+              "type": "TIP",
+              "content": "This response is AI-generated, for reference only."
+            }
+          ]
+        },
+        {
+          "message_id": "3",
+          "role": "USER",
+          "status": "FINISHED",
+          "fragments": [
+            {
+              "id": "f8",
+              "type": "REQUEST",
+              "content": "如果改成带一个 6 岁孩子同行，两天一夜，方案要怎么调整？预算加到 2000。"
+            }
+          ]
+        },
+        {
+          "message_id": "4",
+          "role": "ASSISTANT",
+          "status": "FINISHED",
+          "fragments": [
+            {
+              "id": "f9",
+              "type": "THINK",
+              "content": "（内部推理，不应导出）亲子出行要降低路线强度，并把午休时间算进行程。"
+            },
+            {
+              "id": "f10",
+              "type": "TOOL_SEARCH",
+              "status": "FINISHED",
+              "content": "Found 8 web pages"
+            },
+            {
+              "id": "f11",
+              "type": "RESPONSE",
+              "content": "带一个 6 岁孩子同行、预算 2000 元，建议仍然选「近郊徒步 + 民宿」，但把路线强度降到亲子级别，并预留更多休息时间。\n\n## 行程调整\n- 第一天上午出发，中午前到达民宿，下午走 2 到 3 公里的平缓步道；\n- 傍晚在民宿附近吃当地小吃，避免安排夜间活动；\n- 第二天上午安排一个自然教育类的小景点，午饭后返程。\n\n## 预算调整\n- 交通：自驾或包车往返约 200 元；\n- 住宿：亲子友好民宿一晚约 450 元；\n- 餐饮：三餐与零食约 350 元；\n- 门票与亲子活动：约 200 元；\n- 机动与保险：约 150 元；\n- 合计约 1350 元，仍低于 2000 元预算。\n\n## 亲子出行注意\n1. 步道选择有护栏、坡度平缓的路线，单程不超过 2 公里；\n2. 带好防晒、驱蚊、常用药和更换衣物；\n3. 提前确认民宿是否提供儿童餐具与加床；\n4. 预留午睡时间，不把行程排满。\n\n如果需要更省心的版本，可以把徒步换成农场采摘或自然博物馆，孩子体力消耗更可控。"
+            },
+            {
+              "id": "f12",
+              "type": "TIP",
+              "content": "This response is AI-generated, for reference only."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

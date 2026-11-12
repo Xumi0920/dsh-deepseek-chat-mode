@@ -1,0 +1,65 @@
+{
+  "name": "@xumi0920/dsh-deepseek-chat-mode",
+  "version": "0.7.0",
+  "description": "Chat ⇄ Work mode switch for DeepSeek Harness: open the DeepSeek web chat in a full-screen right-sidebar tab and hand the conversation off as a new DSH task.",
+  "license": "MIT",
+  "author": "Xumi0920",
+  "type": "module",
+  "homepage": "https://github.com/Xumi0920/dsh-deepseek-chat-mode#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xumi0920/dsh-deepseek-chat-mode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xumi0920/dsh-deepseek-chat-mode/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "chat",
+    "agent",
+    "sidebar"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "src/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "test:live": "node test/live.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

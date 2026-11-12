@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="DeepSeek web chat bridge">
+  <defs>
+    <linearGradient id="dsb-bg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4d6bfe"/>
+      <stop offset="1" stop-color="#2a3fbf"/>
+    </linearGradient>
+    <linearGradient id="dsb-card" x1="14" y1="38" x2="50" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="#dfe6ff" stop-opacity="0.94"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#dsb-bg)"/>
+  <path d="M12 20.5C12 18.57 13.57 17 15.5 17h17c1.93 0 3.5 1.57 3.5 3.5v9c0 1.93-1.57 3.5-3.5 3.5H22l-6.5 5v-5h-1.5c-1.93 0-3.5-1.57-3.5-3.5v-9z" fill="url(#dsb-card)"/>
+  <path d="M52 31.5c0-1.93-1.57-3.5-3.5-3.5h-17c-1.93 0-3.5 1.57-3.5 3.5v9c0 1.93 1.57 3.5 3.5 3.5H42l6.5 5v-5h0.5c1.93 0 3.5-1.57 3.5-3.5v-9z" fill="#ffffff" fill-opacity="0.42"/>
+  <circle cx="19" cy="25" r="2.1" fill="#4d6bfe"/>
+  <circle cx="25.5" cy="25" r="2.1" fill="#4d6bfe"/>
+  <circle cx="32" cy="25" r="2.1" fill="#4d6bfe"/>
+  <path d="M36 17.5h9.5M42 13.5l4 4-4 4" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95"/>
+</svg>
